@@ -1,8 +1,16 @@
 .location {}
 
-.location__text {}
+.location__text {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $secondary-dark-gray;
+  text-transform: uppercase;
+}
 
-.location__address {}
+.location__address {
+  line-height: 20px;
+}
 
 .location__city {}
 
