@@ -1,8 +1,8 @@
 /* GLOBAL */
-@import "./global/variables.scss";
-@import "./global/mixins.scss";
-@import "./global/fonts.scss";
-@import "./global/global.scss";
+@import "./common/variables.scss";
+@import "./common/mixins.scss";
+@import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS */
 @import "./blocks/button.scss";
