@@ -16,13 +16,24 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__logo logo">
-      <a class="logo__link logo-image" href="#">Логотип Cat Energy</a>
-      <a class="logo__link logo-title" href="#">Надпись Cat Energy</a>
+      <a class="logo__link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/index/cat-energy-logo/cat-energy-logo-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/index/cat-energy-logo/cat-enegry-logo-tablet.svg">
+          <img class="logo__icon" src="images/index/cat-energy-logo/cat-energy-logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy">
+        </picture>
+      </a>
+      <a class="logo__link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" width="118" height="21" type="image/svg+xml" srcset="images/index/cat-energy-logo-text/cat-energy-logo-text-desktop.svg">
+          <img class="logo__icon-text" src="images/index/cat-energy-logo-text/cat-energy-logo-text-mobile.svg" width="101" height="18" alt="Надпись Cat Energy">
+        </picture>
+      </a>
     </div>
     <nav class="main-header__nav main-nav">
       <ul class="main-nav__list">
         <li class="main-nav__item">
-          <a class="main-nav__item-link main-nav__item-link--current" href="#">Главная</a>
+          <a class="main-nav__item-link main-nav__item-link--current" href="index.html">Главная</a>
         </li>
         <li class="main-nav__item">
           <a class="main-nav__item-link" href="catalog.html">Каталог продукции</a>
@@ -69,7 +80,7 @@
       <ol class="advantages__list">
         <li class="advantages__item advantages__item--leaf">Функциональное питание содержит только полезные питательные вещества.</li>
         <li class="advantages__item advantages__item--water">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
-        <li class="advantages__item advantages__item--cutlery">Замените один-два приема обычной еды на наше функциональное питание.</li>
+        <li class="advantages__item advantages__item--eat">Замените один-два приема обычной еды на наше функциональное питание.</li>
         <li class="advantages__item advantages__item--clock">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</li>
       </ol>
     </section>
@@ -130,21 +141,21 @@
   </main>
 
   <footer class="main-footer">
-    <a class="main-footer__link logo-title" href="#">Cat Energy</a>
+    <a class="main-footer__logo-link logo-text-link" href="#"><span class="visually-hidden">Cat Energy</span></a>
     <ul class="main-footer__social-list social-list">
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy">Мы в Вконтакте</a>
+        <a class="social-list__link social-list__link--vkontakte" href="https://vk.com/htmlacademy"><span class="visually-hidden">Мы в Вконтакте</span></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru">Мы в Ютубе</a>
+        <a class="social-list__link social-list__link--youtube" href="https://www.youtube.com/user/htmlacademyru"><span class="visually-hidden">Мы в Ютубе</span></a>
       </li>
       <li class="social-list__item">
-        <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy">Мы в Телеграме</a>
+        <a class="social-list__link social-list__link--telegram" href="https://t.me/htmlacademy"><span class="visually-hidden">Мы в Телеграме</span></a>
       </li>
     </ul>
     <div class="main-footer__developer developer-logo">
-      <a class="developer-logo__link developer-logo-title" href="#">Надпись HTML-academy</a>
-      <a class="developer-logo__link developer-logo-image" href="#">Логотип HTML-academy</a>
+      <a class="developer-logo__link developer-logo__link--logo-title" href="#"><span class="visually-hidden">Надпись HTML-academy</span></a>
+      <a class="developer-logo__link developer-logo__link--logo-image" href="#"><span class="visually-hidden">Логотип HTML-academy</span></a>
     </div>
   </footer>
 </body>

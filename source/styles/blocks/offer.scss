@@ -5,11 +5,32 @@
 }
 
 .offer__title {
+  position: relative;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
   line-height: 37px;
   color: $basic-black;
   text-transform: uppercase;
+}
+
+.offer__title::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: $basic-green;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.offer__title--slim::before {
+  background-image: url("../../icons/stack.svg#cat-slim");
+}
+
+.offer__title--fit::before {
+  background-image: url("../../icons/stack.svg#cat-pro");
 }
 
 .offer__description {}
@@ -19,5 +40,14 @@
   font-size: 16px;
   line-height: 16px;
   color: $basic-black;
+  text-decoration: none;
 }
 
+.offer__link::after {
+  content: "";
+  display: block;
+  width: 32px;
+  height: 10px;
+  mask-image: url("../../icons/stack.svg#arrow-icon");
+  background-color: $basic-black;
+}
