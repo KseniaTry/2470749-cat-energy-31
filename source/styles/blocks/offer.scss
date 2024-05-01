@@ -6,7 +6,7 @@
 
 .offer__title {
   position: relative;
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 24px;
   line-height: 37px;
   color: $basic-black;
@@ -16,27 +16,39 @@
 .offer__title::before {
   content: "";
   display: block;
+  position: absolute;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background-color: $basic-green;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
-.offer__title--slim::before {
+.offer__title--slim::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 36px;
+  height: 50px;
+  transform: translateY(-40px) translateX(7px);
   background-image: url("../../icons/stack.svg#cat-slim");
+  background-repeat: no-repeat;
 }
 
-.offer__title--fit::before {
+.offer__title--fit::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 67px;
+  height: 28px;
+  transform: translateY(-25px) translateX(-8px);
   background-image: url("../../icons/stack.svg#cat-pro");
+  background-repeat: no-repeat;
 }
 
 .offer__description {}
 
 .offer__link {
-  font-family: "Oswald", sans-serif;
+  font-family: $oswald-font;
   font-size: 16px;
   line-height: 16px;
   color: $basic-black;
