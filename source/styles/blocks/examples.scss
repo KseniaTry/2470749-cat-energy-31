@@ -34,4 +34,12 @@
 
 .examples__image {}
 
-.examples__switch {}
+.examples__switch {
+  display: block;
+  width: 4px;
+  height: 512px;
+  border: none;
+  mask-image: url("../../icons/stack.svg#slider");
+  background-color: #666666;
+  cursor: pointer;
+}
