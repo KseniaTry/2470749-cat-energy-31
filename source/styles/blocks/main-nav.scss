@@ -6,6 +6,13 @@
   color: $basic-black;
 }
 
+.main-nav__toggle {
+  width: 24px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#navigation-icon-mobile");
+  background-color: $basic-black;
+}
+
 .main-nav__item {}
 
 .main-nav__item-link {}
