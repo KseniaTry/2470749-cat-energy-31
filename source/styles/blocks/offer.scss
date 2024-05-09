@@ -1,4 +1,7 @@
-.offer {}
+.offer {
+  width: 87%;
+  margin: 0 auto;
+}
 
 .offer__item {
   background-color: #d9d9d9;
@@ -6,6 +9,7 @@
 
 .offer__title {
   position: relative;
+
   font-family: $oswald-font;
   font-size: 24px;
   line-height: 37px;
@@ -17,8 +21,10 @@
   content: "";
   display: block;
   position: absolute;
+
   width: 50px;
   height: 50px;
+
   border-radius: 50%;
   background-color: $basic-green;
 }
@@ -27,9 +33,11 @@
   content: "";
   display: block;
   position: absolute;
+  transform: translateY(-40px) translateX(7px);
+
   width: 36px;
   height: 50px;
-  transform: translateY(-40px) translateX(7px);
+
   background-image: url("../../icons/stack.svg#cat-slim");
   background-repeat: no-repeat;
 }
@@ -38,9 +46,11 @@
   content: "";
   display: block;
   position: absolute;
+  transform: translateY(-25px) translateX(-8px);
+
   width: 67px;
   height: 28px;
-  transform: translateY(-25px) translateX(-8px);
+
   background-image: url("../../icons/stack.svg#cat-pro");
   background-repeat: no-repeat;
 }
@@ -58,8 +68,31 @@
 .offer__link::after {
   content: "";
   display: block;
+
   width: 32px;
   height: 10px;
+
   mask-image: url("../../icons/stack.svg#arrow-icon");
   background-color: $basic-black;
+}
+
+@media (min-width: $tablet-width) {
+  .offer {
+    width: 92%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer {
+    @include flex(row, center, center);
+    flex-wrap: wrap;
+    gap: 7%;
+
+    width: 85%;
+    margin: 82px auto 71px;
+  }
+
+  .offer__item {
+    width: 46%;
+  }
 }

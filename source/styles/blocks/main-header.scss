@@ -1,5 +1,55 @@
-.main-header {}
+.main-header {
+  margin: 0 auto;
+  margin-top: 13px;
+}
 
-.main-header__logo {}
+.main-header__container {
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+  width: 88%;
+  margin: 0 auto;
+}
 
-.main-header__nav {}
+.main-header__logo-image-link {
+  margin-right: 13px;
+}
+
+.main-header__logo-text-link {
+  width: 101px;
+  height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .main-header {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    width: 92%;
+    margin-top: 25px;
+  }
+
+  .main-header__container {
+    width: 25%;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+  .main-header__nav {
+    width: 60%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-header {
+    width: 85%;
+    margin-top: 55px;
+  }
+
+  .main-header__logo-text-link {
+    width: 118px;
+    height: 21px;
+  }
+
+  .main-header__nav {
+    width: 39%;
+  }
+}
