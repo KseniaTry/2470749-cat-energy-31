@@ -1,4 +1,7 @@
 .subscription {
+  width: $mobile-container-width;
+  margin: 0 auto;
+
   font-family: $oswald-font;
 }
 
@@ -17,9 +20,47 @@
 .subscription__email-form {}
 
 .subscription__input {
+  width: 100%;
+
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
 }
 
-.subscription__subscribe {}
+.subscription__subscribe {
+  width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .subscription {
+    width: $tablet-container-width;
+  }
+
+  .subscription__email-form {
+    @include flex();
+
+    margin: 0 auto;
+  }
+
+  .subscription__input {
+    margin: 0;
+    width: 376px;
+    height: 56px;
+  }
+
+  .subscription__subscribe {
+    width: 256px;
+    height: 56px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscription {
+    width: $desktop-container-width;
+  }
+
+  .subscription__input {
+    width: 496px;
+  }
+}
+

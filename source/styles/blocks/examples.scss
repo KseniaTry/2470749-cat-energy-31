@@ -4,12 +4,13 @@
 }
 
 .examples__description-container {
-  width: 87%;
+  width: $mobile-container-width;
   margin: 0 auto;
 }
 
 .examples__title {
-  margin: 0;
+  width: $mobile-container-width;
+  margin: 0 auto;
 
   font-family: $oswald-font;
   font-size: 36px;
@@ -112,7 +113,7 @@
     @include flex(row, space-between, center);
     flex-wrap: wrap;
 
-    width: 92%;
+    width: $tablet-container-width;
   }
 
   .examples__title {
@@ -152,7 +153,7 @@
   }
 
   .examples__title {
-    width: 85%;
+    width: $desktop-container-width;
     margin: 0 auto;
     margin-bottom: 76px;
   }

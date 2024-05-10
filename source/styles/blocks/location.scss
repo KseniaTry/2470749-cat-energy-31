@@ -2,7 +2,7 @@
 
 .location__container {
   @include flex();
-  width: 87%;
+  width: $mobile-container-width;
   margin: 0 auto;
   padding: 26px 0;
 }
@@ -41,7 +41,7 @@
 
 @media (min-width: $tablet-width) {
   .location__container {
-    width: 92%;
+    width: $tablet-container-width;
     padding: 61px 70px;
     justify-content: space-between;
   }

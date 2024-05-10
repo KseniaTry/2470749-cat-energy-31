@@ -5,7 +5,7 @@
 .main-footer__container {
   @include flex(column, space-between, center);
 
-  width: 87%;
+  width: $mobile-container-width;
   margin: 0 auto;
   padding: 40px 0;
 }
@@ -29,6 +29,7 @@
   .main-footer__container {
     @include flex(row, space-between, center);
 
+    width: $tablet-container-width;
     padding: 55px 0;
   }
 
@@ -48,6 +49,7 @@
   }
 
   .main-footer__container {
+    width: $desktop-container-width;
     padding: 66px 0;
   }
 }

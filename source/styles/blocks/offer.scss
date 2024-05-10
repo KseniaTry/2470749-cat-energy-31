@@ -1,5 +1,5 @@
 .offer {
-  width: 87%;
+  width: $mobile-container-width;
   margin: 0 auto;
 }
 
@@ -78,7 +78,7 @@
 
 @media (min-width: $tablet-width) {
   .offer {
-    width: 92%;
+    width: $tablet-container-width;
   }
 }
 
@@ -88,7 +88,7 @@
     flex-wrap: wrap;
     gap: 7%;
 
-    width: 85%;
+    width: $desktop-container-width;
     margin: 82px auto 71px;
   }
 
