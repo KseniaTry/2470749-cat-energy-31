@@ -3,6 +3,14 @@
   margin: 0 auto;
 
   font-family: $oswald-font;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-container-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-container-width;
+  }
 }
 
 .subscription__title {
@@ -17,7 +25,13 @@
   text-align: center;
 }
 
-.subscription__email-form {}
+.subscription__email-form {
+  @media (min-width: $tablet-width) {
+    @include flex();
+
+    margin: 0 auto;
+  }
+}
 
 .subscription__input {
   width: 100%;
@@ -25,42 +39,23 @@
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
-}
 
-.subscription__subscribe {
-  width: 100%;
-}
-
-@media (min-width: $tablet-width) {
-  .subscription {
-    width: $tablet-container-width;
-  }
-
-  .subscription__email-form {
-    @include flex();
-
-    margin: 0 auto;
-  }
-
-  .subscription__input {
+  @media (min-width: $tablet-width) {
     margin: 0;
     width: 376px;
     height: 56px;
   }
 
-  .subscription__subscribe {
-    width: 256px;
-    height: 56px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .subscription {
-    width: $desktop-container-width;
-  }
-
-  .subscription__input {
+  @media (min-width: $desktop-width) {
     width: 496px;
   }
 }
 
+.subscription__subscribe {
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+    height: 56px;
+  }
+}

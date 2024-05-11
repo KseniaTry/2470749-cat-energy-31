@@ -1,26 +1,24 @@
 .products {
   width: $mobile-container-width;
   margin: 0 auto;
-}
 
-@media (min-width: $tablet-width) {
-  .products {
+  @media (min-width: $tablet-width) {
     width: $tablet-container-width;
   }
 
-  .products__container {
+  @media (min-width: $desktop-width) {
+    width: $desktop-container-width;
+  }
+}
+
+.products__container {
+  @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     column-gap: 60px;
   }
-}
 
-@media (min-width: $desktop-width) {
-  .products {
-    width: $desktop-container-width;
-  }
-
-  .products__container {
+  @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 80px;

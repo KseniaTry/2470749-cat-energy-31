@@ -11,18 +11,30 @@
   height: 24px;
   mask-image: url("../../icons/stack.svg#toggle-icon");
   background-color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
 .main-nav__list {
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    @include flex(row, space-between, center);
+  }
 }
 
 .main-nav__item {
   text-align: center;
   margin: 0;
   border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
 }
 
 .main-nav__item::after {
@@ -33,18 +45,4 @@
 
 .main-nav__item-link {
   text-decoration: none;
-}
-
-@media (min-width: $tablet-width) {
-  .main-nav__toggle {
-    display: none;
-  }
-
-  .main-nav__list {
-    @include flex(row, space-between, center);
-  }
-
-  .main-nav__item {
-    border: none;
-  }
 }
