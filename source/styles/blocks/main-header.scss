@@ -8,8 +8,13 @@
   }
 
   @media (min-width: $desktop-width) {
+    margin-bottom: 65px;
+  }
+
+  @media (min-width: $desktop-width) {
     width: $desktop-container-width;
     margin-top: 55px;
+    margin-bottom: 29px;
   }
 }
 
