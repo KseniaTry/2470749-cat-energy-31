@@ -12,6 +12,14 @@
     background-color: $basic-white;
     color: $basic-black;
   }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 414px 552px;
+
+    width: $desktop-width;
+    margin: 0 auto;
+  }
 }
 
 .hero__title {
@@ -25,12 +33,29 @@
 .hero__text {
   line-height: 14px;
   text-transform: uppercase;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
 }
 
-.hero__image {}
+.hero__image {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 4;
+  }
+}
 
 .hero__select {
   @media (min-width: $tablet-width) {
     position: absolute;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 244px;
+    height: 54px;
+
+    position: static;
+    grid-column: 1 / 2;
   }
 }
