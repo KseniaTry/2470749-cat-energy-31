@@ -1,14 +1,11 @@
 .main-header {
+  margin: 13px auto 15px;
+
   @media (min-width: $tablet-width) {
     @include flex(row, space-between, center);
     flex-wrap: wrap;
     width: $tablet-container-width;
-    margin: 0 auto;
-    margin-top: 25px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-bottom: 65px;
+    margin: 25px auto;
   }
 
   @media (min-width: $desktop-width) {
@@ -23,7 +20,7 @@
   grid-template-columns: 12% 20% 36% 32%;
   place-items: center center;
   width: $mobile-container-width;
-  margin: 13px auto 15px;
+  margin: 0 auto;
 
   @media (min-width: $tablet-width) {
     @include flex(row, flex-start, center);

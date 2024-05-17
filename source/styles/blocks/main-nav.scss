@@ -37,4 +37,8 @@
 .main-nav__item-link {
   text-decoration: none;
   color: $basic-black;
+
+  @media (min-width: $desktop-width) {
+    color: $basic-white;
+  }
 }

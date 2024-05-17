@@ -1,12 +1,14 @@
 .button {
   display: block;
+
+  padding: 10px;
+
   font-family: $oswald-font;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
-  padding: 10px;
   border: none;
 }
 
@@ -21,6 +23,8 @@
 }
 
 .button--big {
+  padding: 14px;
+
   font-size: 20px;
   line-height: 26px;
 }
