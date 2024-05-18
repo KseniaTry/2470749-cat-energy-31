@@ -8,6 +8,7 @@
   width: $mobile-container-width;
   margin: 0 auto;
   padding: 40px 0;
+  gap: 40px;
 
   @media (min-width: $tablet-width) {
     flex-direction: row;
@@ -38,6 +39,32 @@
 
   @media (min-width: $tablet-width) {
     width: 132px;
+  }
+}
+
+@media (max-width: $mobile-width-max) {
+  .main-footer__social-list::after {
+    content: "";
+    position: absolute;
+    display: block;
+    transform: translateY(34px);
+
+    width: $mobile-container-width;
+    height: 1px;
+
+    background-color: #d9d9d9;
+  }
+
+  .main-footer__social-list::before {
+    content: "";
+    position: absolute;
+    display: block;
+    transform: translateY(-34px);
+
+    width: $mobile-container-width;
+    height: 1px;
+
+    background-color: #d9d9d9;
   }
 }
 
