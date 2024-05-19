@@ -66,35 +66,22 @@
 
 .location__map-container {
   position: relative;
-  overflow: hidden;
-
-  padding-bottom: 362px;
-  height: 0;
+  width: 100%;
+  height: 362px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 400px;
+    height: 400px;
   }
 }
 
 .location__map-container iframe {
-  position: absolute;
   display: block;
-  left: 0;
-  top: 0;
 
   height: 100%;
   width: 100%;
 
   border: none;
 }
-
-// .location__map-container {
-//   width: 100%;
-// }
-
-// .location__map {
-//   position: relative;
-// }
 
 // .location__map-pin-image {
 //   position: absolute;
