@@ -114,6 +114,7 @@
 
   .main-header__nav--opened .main-nav__list {
     position: absolute;
+    z-index: 2;
     width: 100%;
     background-color: $basic-white;
   }

@@ -42,3 +42,9 @@
     color: $basic-white;
   }
 }
+
+.main-nav__item-link--catalog {
+  @media (min-width: $desktop-width) {
+    color: $basic-black;
+  }
+}

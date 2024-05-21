@@ -26,7 +26,6 @@
     grid-template-rows: 1fr auto 1fr;
 
     padding-top: 29px;
-    // паддинги!! подумать
     margin-left: 13%;
     margin-right: 23%;
     margin-bottom: 82px;
@@ -49,8 +48,10 @@
 
     background-image:
       image-set(
-        url("../../images/index/hero/hero-background-mobile@1x.jpg") 1x,
-        url("../../images/index/hero/hero-background-mobile@2x.jpg") 2x),
+        url("../../images/index/hero/hero-background-mobile@1x.webp") type("image/webp") 1x,
+        url("../../images/index/hero/hero-background-mobile@2x.webp") type("image/webp") 2x,
+        url("../../images/index/hero/hero-background-mobile@1x.jpg") type("image/jpg") 1x,
+        url("../../images/index/hero/hero-background-mobile@2x.jpg") type("image/jpg") 2x),
       linear-gradient(to right, #4f4e53 50%, transparent 50%),
       linear-gradient(to left, #3f3e44 50%, transparent 50%);
     background-size:
@@ -78,8 +79,10 @@
 
     background-image:
       image-set(
-        url("../../images/index/hero/hero-background-desktop@1x.jpg") 1x,
-        url("../../images/index/hero/hero-background-desktop@2x.jpg") 2x),
+        url("../../images/index/hero/hero-background-desktop@1x.webp") type("image/webp") 1x,
+        url("../../images/index/hero/hero-background-desktop@2x.webp") type("image/webp") 2x,
+        url("../../images/index/hero/hero-background-desktop@1x.jpg") type("image/jpg") 1x,
+        url("../../images/index/hero/hero-background-desktop@2x.jpg") type("image/jpg") 2x),
       linear-gradient(to right, transparent 60%, #3d3d3f 60%);
     background-size:
       cover,
