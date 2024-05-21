@@ -1,16 +1,19 @@
 .extra-products {
   width: $mobile-container-width;
-  margin: 0 auto;
+  margin: 0 auto 40px;
 
   @media (min-width: $tablet-width) {
     width: $tablet-container-width;
+    margin-bottom: 80px;
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-container-width;
     display: grid;
     grid-template-columns: 1fr 20%;
     column-gap: 80px;
+
+    width: $desktop-container-width;
+    margin-bottom: 96px;
   }
 }
 
@@ -22,6 +25,14 @@
   font-family: $oswald-font;
   font-size: 24px;
   line-height: 24px;
+
+  margin: 0;
+  margin-bottom: 36px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 32px;
+    line-height: 32px;
+  }
 
   @media (min-width: $desktop-width) {
     grid-column: 1 / 3;

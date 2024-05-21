@@ -1,11 +1,14 @@
 .products {
+  margin-bottom: 25px;
+
   @media (min-width: $tablet-width) {
     width: $tablet-container-width;
-    margin: 0 auto;
+    margin: 0 auto 74px;
   }
 
   @media (min-width: $desktop-width) {
     width: $desktop-container-width;
+    margin-bottom: 71px;
   }
 }
 

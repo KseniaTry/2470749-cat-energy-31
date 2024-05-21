@@ -2,10 +2,12 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 
+  margin-top: -1px;
   padding: 13px 0 19px;
 
   line-height: 14px;
   border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
 
 
   @media (min-width: $tablet-width) {
@@ -18,10 +20,6 @@
     align-items: center;
     column-gap: 40px;
   }
-}
-
-.extra-card:last-child {
-  border-bottom: 1px solid #cdcdcd;
 }
 
 .extra-card__name {
@@ -38,6 +36,11 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 1 / 2;
+
+    margin-bottom: 25px;
+
+    font-size: 20px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -51,12 +54,15 @@
 
   @media (min-width: $tablet-width) {
     grid-column: 3 / 4;
-    justify-self: end;
+
+    margin-bottom: 25px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
-    justify-self: end;
   }
 }
 
@@ -67,6 +73,11 @@
   @media (min-width: $tablet-width) {
     grid-column: 2 / 3;
     justify-self: end;
+
+    margin-bottom: 25px;
+
+    font-size: 16px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
