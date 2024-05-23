@@ -1,6 +1,7 @@
 .subscription {
   width: $mobile-container-width;
   margin: 0 auto;
+  margin-bottom: 40px;
 
   font-family: $oswald-font;
 
@@ -14,31 +15,87 @@
 }
 
 .subscription__title {
+  position: relative;
+
+  width: fit-content;
+  margin-bottom: 32px;
+
   font-size: 24px;
   line-height: 24px;
   color: $basic-black;
+  background-color: $basic-white;
+  box-shadow: -40px 0 0 0 $basic-white, 40px 0 0 0 $basic-white;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    z-index: -1;
+
+    width: 100vw;
+    height: 2px;
+
+    background-color: $basic-green;
+    box-shadow: 100vw 0 0 0 $basic-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 40px;
+    margin-bottom: 66px;
+
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+
+    font-size: 40px;
+    line-height: 40px;
+  }
 }
 
 .subscription__text {
+  width: 70%;
+  margin: 0 auto 24px;
+
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    width: 90%;
+
+    font-size: 24px;
+    line-height: 32px;
+  }
 }
 
 .subscription__email-form {
   @media (min-width: $tablet-width) {
     @include flex();
 
-    margin: 0 auto;
+    margin: 0 auto 80px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 104px;
   }
 }
 
 .subscription__input {
   width: 100%;
+  padding: 13px;
+  margin-bottom: 16px;
 
+  font-family: $oswald-font;
+  color: #444444;
   font-size: 20px;
   line-height: 30px;
   text-transform: uppercase;
+  border: 1px solid #cdcdcd;
 
   @media (min-width: $tablet-width) {
     margin: 0;
