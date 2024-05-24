@@ -15,9 +15,9 @@
   }
 }
 
-.main-header__container {
+.main-header__logo-container {
   display: grid;
-  grid-template-columns: 12% 20% 36% 32%;
+  grid-template-columns: auto auto 1fr;
   place-items: center center;
   width: $mobile-container-width;
   margin: 0 auto;

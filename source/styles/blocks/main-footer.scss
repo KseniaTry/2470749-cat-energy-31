@@ -34,9 +34,6 @@
 }
 
 .main-footer__social-list {
-  @include flex();
-  gap: 24px;
-
   @media (min-width: $tablet-width) {
     width: 132px;
   }
