@@ -30,3 +30,12 @@
 .social-list__link--telegram {
   mask-image: url("../../icons/stack.svg#telegram");
 }
+
+.social-list__link:hover,
+.social-list__link:focus {
+  background-color: $basic-green;
+}
+
+.social-list__link:active {
+  background-color: rgba(104, 183, 56, 0.3);
+}

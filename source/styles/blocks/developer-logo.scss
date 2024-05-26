@@ -14,8 +14,21 @@
   height: 20px;
 }
 
+.developer-logo__link--logo-title:active {
+  background-color: rgba(68, 68, 68, 0.3);
+}
+
 .developer-logo__link--logo-image {
   mask-image: url("../../icons/stack.svg#html-academy-logo");
   width: 27px;
   height: 34px;
+}
+
+.developer-logo__link--logo-image:hover,
+.developer-logo__link--logo-image:focus {
+  background-color: $basic-green;
+}
+
+.developer-logo__link--logo-image:active {
+  background-color: rgba(104, 183, 56, 0.3);
 }

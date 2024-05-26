@@ -17,9 +17,28 @@
   background-color: $basic-green;
 }
 
+.button--primary:hover,
+.button--primary:focus {
+  background-color: #5eaa2f;
+}
+
+.button--primary:active {
+  background-color: #5eaa2f;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--secondary {
   color: #444444;
   background-color: $basic-light-gray;
+}
+
+.button--secondary:hover,
+.button--secondary:focus {
+  background-color: #ebebeb;
+}
+
+.button--secondary:active {
+  background-color: #ebebeb;
 }
 
 .button--big {

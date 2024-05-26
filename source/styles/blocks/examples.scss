@@ -310,3 +310,36 @@
     background-image: linear-gradient(to bottom, #666666 240px, transparent 240px, transparent 276px, #666666 276px);
   }
 }
+
+.examples__switch:hover {
+  border-color: $basic-green;
+}
+
+.examples__switch:hover::after {
+  background-color: $basic-green;
+}
+
+.examples__switch:hover::before {
+  background-image: linear-gradient(to bottom, $basic-green 110px, transparent 110px, transparent 147px, $basic-green 147px);
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, $basic-green 240px, transparent 240px, transparent 276px, $basic-green 276px);
+  }
+}
+
+
+.examples__switch:active {
+  border-color: rgba(94, 170, 47, 0.6);
+}
+
+.examples__switch:active::after {
+  background-color: rgba(94, 170, 47, 0.6);
+}
+
+.examples__switch:active::before {
+  background-image: linear-gradient(to bottom, rgba(94, 170, 47, 0.6) 110px, transparent 110px, transparent 147px, rgba(94, 170, 47, 0.6) 147px);
+
+  @media (min-width: $tablet-width) {
+    background-image: linear-gradient(to bottom, rgba(94, 170, 47, 0.6) 240px, transparent 240px, transparent 276px, rgba(94, 170, 47, 0.6) 276px);
+  }
+}

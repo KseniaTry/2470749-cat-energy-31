@@ -194,6 +194,10 @@
   }
 }
 
+.offer__link:active {
+  opacity: 0.3;
+}
+
 .offer__link::after {
   content: "";
   display: block;
