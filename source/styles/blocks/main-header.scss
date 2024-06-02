@@ -20,7 +20,7 @@
   grid-template-columns: auto auto 1fr;
   place-items: center center;
   width: $mobile-container-width;
-  margin: 13px auto 15px;
+  margin: 13px auto 11px;
 
   @media (min-width: $tablet-width) {
     @include flex(row, flex-start, center);
@@ -73,8 +73,8 @@
   position: absolute;
   width: 24px;
   height: 2px;
-  top: 33px;
-  right: 5%;
+  top: 30px;
+  right: 21px;
   background-color: $basic-black;
   border: none;
 
@@ -91,11 +91,11 @@
   }
 
   &::after {
-    top: 6px;
+    top: 8px;
   }
 
   &::before {
-    top: -6px;
+    top: -8px;
   }
 
   @media (min-width: $tablet-width) {
@@ -120,7 +120,6 @@
   .main-header__nav--opened .main-nav__list {
     position: absolute;
     display: block;
-    bottom: 20px;
     z-index: 2;
 
     width: 100%;
