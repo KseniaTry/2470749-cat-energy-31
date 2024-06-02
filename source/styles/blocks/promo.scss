@@ -1,7 +1,7 @@
 .promo {
   position: relative;
-  padding: 186px 60px 43px;
-  margin-top: 35px;
+  padding: 186px 55px 40px;
+  margin-top: 38px;
   margin-bottom: 40px;
   height: 290px;
 
@@ -32,8 +32,9 @@
   }
 }
 
-
 .promo__text {
+  margin: 0;
+
   font-size: 16px;
   line-height: 20px;
   color: $basic-white;
@@ -53,7 +54,7 @@
   position: absolute;
 
   @include centring-positioned-element;
-  top: 110px;
+  top: 98px;
 
   width: 78px;
   height: 80px;

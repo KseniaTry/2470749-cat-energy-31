@@ -42,6 +42,10 @@
 .main-header__logo-text-link {
   grid-column: 3 / 4;
 
+  @media (max-width: $mobile-width-max) {
+    margin-left: -35px;
+  }
+
   @media (min-width: $desktop-width) {
     width: 120px;
     height: 24px;
