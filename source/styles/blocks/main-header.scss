@@ -41,8 +41,6 @@
 
 .main-header__logo-text-link {
   grid-column: 3 / 4;
-  width: 101px;
-  height: 18px;
 
   @media (min-width: $desktop-width) {
     width: 118px;
@@ -61,7 +59,7 @@
 
 .main-header__nav {
   @media (min-width: $tablet-width) {
-    width: 60%;
+    width: 62%;
   }
 
   @media (min-width: $desktop-width) {

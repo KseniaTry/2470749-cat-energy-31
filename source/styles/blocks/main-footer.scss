@@ -24,18 +24,12 @@
 }
 
 .main-footer__logo-link {
-  width: 128px;
-  height: 24px;
+  width: 130px;
+  height: 25px;
 
   @media (min-width: $desktop-width) {
     width: 118px;
     height: 21px;
-  }
-}
-
-.main-footer__social-list {
-  @media (min-width: $tablet-width) {
-    width: 132px;
   }
 }
 
@@ -70,6 +64,6 @@
   width: 100%;
 
   @media (min-width: $tablet-width) {
-    width: 168px;
+    width: 161px;
   }
 }

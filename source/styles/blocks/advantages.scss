@@ -5,7 +5,7 @@
 
   @media (min-width: $tablet-width) {
     width: $tablet-container-width;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
   }
 
   @media (min-width: $desktop-width) {
@@ -21,6 +21,11 @@
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
@@ -33,7 +38,7 @@
 
     @include flex(row, flex-start, center);
     flex-wrap: wrap;
-    gap: 18%;
+    gap: 19%;
   }
 
   @media (min-width: $desktop-width) {
@@ -49,7 +54,7 @@
 
   @media (min-width: $tablet-width) {
     width: 35%;
-    margin-bottom: 37px;
+    margin-bottom: 55px;
   }
 
   @media (min-width: $desktop-width) {
@@ -65,7 +70,7 @@
     counter-increment: item;
     display: block;
     z-index: -1;
-    top: 91px;
+    top: 125px;
     left: 48%;
 
     font-family: $oswald-font;
@@ -90,6 +95,8 @@
   background-position: center;
 
   @media (min-width: $tablet-width) {
+    top: 34px;
+
     width: 80px;
     height: 80px;
   }
@@ -116,9 +123,15 @@
   padding: 2px 0 4px 80px;
 
   @media (min-width: $tablet-width) {
-    padding: 111px 0 44px;
+    padding: 145px 0 44px;
 
     font-size: 16px;
     line-height: 24px;
+  }
+}
+
+.advantages__space {
+  @media (max-width: $mobile-width-max) {
+    display: none;
   }
 }
