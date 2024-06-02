@@ -4,6 +4,11 @@
   line-height: 24px;
   text-transform: uppercase;
   color: $basic-black;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .main-nav__list {

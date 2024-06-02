@@ -11,8 +11,10 @@
   }
 
   @media (min-width: $desktop-width) {
-    border-top: none;
     width: 100%;
+    padding: 0;
+
+    border-top: none;
   }
 }
 
@@ -61,7 +63,7 @@
 
   @media (min-width: $desktop-width) {
     width: $desktop-container-width;
-    margin-bottom: 76px;
+    margin-bottom: 75px;
   }
 }
 
@@ -118,10 +120,10 @@
   @media (min-width: $desktop-width) {
     grid-column: 2 / 3;
     justify-content: flex-start;
-    gap: 10%;
+    gap: 11%;
 
     width: 100%;
-    margin-bottom: 55px;
+    margin-bottom: 57px;
   }
 }
 
@@ -236,8 +238,8 @@
 
   @media (min-width: $desktop-width) {
     @include centring-positioned-element;
-    top: 60%;
-    left: 224px;
+    top: 53%;
+    left: 185px;
   }
 }
 
