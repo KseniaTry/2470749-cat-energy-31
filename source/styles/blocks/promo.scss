@@ -28,7 +28,7 @@
 
   @media (min-width: $desktop-width) {
     margin: 0;
-    padding: 185px 52px 43px;
+    padding: 185px 30px 43px;
   }
 }
 
@@ -45,7 +45,12 @@
 
     text-align: start;
   }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+  }
 }
+
 
 .promo__text::before {
   content: "";

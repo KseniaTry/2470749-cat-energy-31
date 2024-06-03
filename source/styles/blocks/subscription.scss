@@ -20,6 +20,7 @@
   position: relative;
 
   width: fit-content;
+  margin: 0;
   margin-bottom: 32px;
 
   font-size: 24px;
@@ -51,7 +52,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom: 66px;
+    margin-left: 0;
+    margin-bottom: 74px;
 
     font-size: 40px;
     line-height: 40px;
