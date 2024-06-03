@@ -14,7 +14,7 @@
     grid-template-columns: 1fr;
     position: relative;
 
-    padding: 161px 37px 40px;
+    padding: 125px 37px 40px;
 
     background-color: $basic-light-gray;
   }
@@ -34,7 +34,7 @@
     position: absolute;
 
     @include centring-positioned-element;
-    top: 10px;
+    top: 33px;
 
     @include flex();
 
@@ -73,6 +73,8 @@
   @media (min-width: $tablet-width) {
     @include flex(column, center, center);
 
+    margin: 35px 0 0;
+
     font-size: 20px;
     line-height: 24px;
   }
@@ -90,7 +92,7 @@
 
   @media (min-width: $tablet-width) {
     margin: 0;
-    margin-bottom: 37px;
+    margin-bottom: 25px;
   }
 }
 
@@ -101,7 +103,6 @@
   line-height: 16px;
 
   @media (min-width: $tablet-width) {
-    padding-bottom: 4px;
     margin-bottom: 10px;
 
     font-size: 16px;
