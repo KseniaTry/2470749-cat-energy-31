@@ -22,7 +22,7 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    column-gap: 80px;
+    column-gap: 75px;
   }
 }
 
@@ -41,5 +41,9 @@
 
     font-size: 60px;
     line-height: 60px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 70px;
   }
 }
