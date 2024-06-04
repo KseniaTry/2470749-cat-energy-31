@@ -15,9 +15,11 @@
 }
 
 .advantages__title {
-  margin: 20px 0 40px;
+  margin: 0;
+  margin-bottom: 38px;
 
   font-family: $oswald-font;
+  font-weight: 400;
   font-size: 36px;
   line-height: 40px;
   color: $basic-black;
@@ -71,7 +73,7 @@
     display: block;
     z-index: -1;
     top: 125px;
-    left: 48%;
+    left: 47%;
 
     font-family: $oswald-font;
     font-size: 280px;

@@ -1,5 +1,6 @@
 .social-list {
   @include flex();
+  flex-wrap: wrap;
   gap: 24px;
 
   margin: 0;
@@ -9,10 +10,6 @@
   @media (min-width: $tablet-width) {
     padding-left: 35px;
   }
-}
-
-.social-list__item {
-
 }
 
 .social-list__link {

@@ -1,7 +1,3 @@
-.developer-logo {
-
-}
-
 .developer-logo__link {
   display: block;
   background-color: $basic-dark-gray;
@@ -9,9 +5,11 @@
 }
 
 .developer-logo__link--logo-title {
-  mask-image: url("../../icons/stack.svg#html-academy-text-logo");
   width: 113px;
   height: 20px;
+  margin-right: 23px;
+
+  mask-image: url("../../icons/stack.svg#html-academy-text-logo");
 }
 
 .developer-logo__link--logo-title:active {
@@ -19,9 +17,10 @@
 }
 
 .developer-logo__link--logo-image {
-  mask-image: url("../../icons/stack.svg#html-academy-logo");
   width: 27px;
   height: 34px;
+
+  mask-image: url("../../icons/stack.svg#html-academy-logo");
 }
 
 .developer-logo__link--logo-image:hover,

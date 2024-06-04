@@ -7,5 +7,3 @@ navMain.classList.remove('main-header__nav--nojs');
 openButton.onclick = function() {
   navMain.classList.toggle('main-header__nav--opened');
 };
-
-
