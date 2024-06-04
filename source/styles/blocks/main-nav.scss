@@ -85,3 +85,9 @@
     background-color: $basic-green;
   }
 }
+
+.main-nav__item-link--designed .main-nav__item-link--current::after {
+  @media (min-width: $desktop-width) {
+    background-color: $basic-white;
+  }
+}

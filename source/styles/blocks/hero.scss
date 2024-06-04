@@ -100,8 +100,8 @@
 }
 
 .hero__title {
-  margin: 0;
-  margin-bottom: 25px;
+  width: 90%;
+  margin: 0 auto 25px;
 
   font-weight: 400;
   font-size: 36px;
@@ -109,8 +109,9 @@
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 40px;
     width: 70%;
+    margin: 0;
+    margin-bottom: 40px;
 
     font-size: 60px;
     line-height: 60px;
@@ -127,16 +128,19 @@
 }
 
 .hero__text {
-  margin: 0;
-  margin-bottom: 30px;
+  width: 80%;
+  margin: 0 auto 30px;
 
   line-height: 14px;
   text-transform: uppercase;
+  text-align: center;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 20px;
+    text-align: start;
 
+    margin: 0;
     margin-bottom: 21px;
   }
 
