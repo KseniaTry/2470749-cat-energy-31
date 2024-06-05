@@ -18,9 +18,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    grid-template-columns: 283px 1fr 91px 244px;
+    grid-template-columns: 291px 1fr 48px 242px;
     align-items: center;
-    column-gap: 40px;
+    column-gap: 34px;
 
     padding: 9px 4px 14px;
   }
@@ -69,6 +69,7 @@
 
   @media (min-width: $desktop-width) {
     grid-column: 3 / 4;
+    justify-self: start;
 
     padding-top: 8px;
     margin-bottom: 0;
