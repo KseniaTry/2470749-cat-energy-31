@@ -40,6 +40,18 @@
   }
 }
 
+.main-nav__item:first-child {
+  @media (min-width: $desktop-width) {
+    margin-left: -2px;
+  }
+}
+
+.main-nav__item:last-child {
+  @media (min-width: $tablet-width) {
+    padding-left: 1px;
+  }
+}
+
 .main-nav__item::after {
   width: 100%;
   height: 1px;
@@ -86,7 +98,7 @@
   }
 }
 
-.main-nav__item-link--designed .main-nav__item-link--current::after {
+.main-nav__item-link--designed.main-nav__item-link--current::after {
   @media (min-width: $desktop-width) {
     background-color: $basic-white;
   }

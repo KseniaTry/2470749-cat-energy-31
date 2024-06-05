@@ -115,6 +115,10 @@
   }
 }
 
+.card__item:last-child {
+  padding-bottom: -2px;
+}
+
 .card__order {
   min-height: 40px;
   min-width: 169px;

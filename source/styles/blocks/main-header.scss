@@ -5,7 +5,7 @@
     @include flex(row, space-between, center);
     flex-wrap: wrap;
     width: $tablet-container-width;
-    margin: 23px auto;
+    margin: 24px auto;
   }
 
   @media (min-width: $desktop-width) {
